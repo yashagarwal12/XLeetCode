@@ -1,0 +1,21 @@
+{
+"instruction_set":[
+  {
+    "description": "TestCase00: Dummy Test Case",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "GetUrl"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": " "
+      }
+    ],
+    "error_out": "Dummy EO",
+    "hint": "Dummy hint"
+  }
+]
+}
