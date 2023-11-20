@@ -1,7 +1,24 @@
 {
 "instruction_set":[
   {
-    "description": "TestCase00: Dummy Test Case",
+    "description": "TestCase 1: Verify the Leetcode Homepage URL",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "leetcode"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": "Navigate"
+      }
+    ],
+    "error_out": "Navigate to the Leetcode website.",
+    "hint": "Ensure that you are on the Leetcode website with the correct URL."
+  },
+  {
+    "description": "TestCase 1: Verify the Leetcode Homepage URL",
     "validations": [
       {
         "object_notation": "COMMAND",
@@ -11,11 +28,164 @@
       {
         "object_notation": "RESPONSE",
         "operator": "contains",
-        "expected_value": " "
+        "expected_value": "leetcode"
       }
     ],
-    "error_out": "Dummy EO",
-    "hint": "Dummy hint"
+    "error_out": "Get the URL of the page and verify",
+    "hint": "Ensure that you check the url of the page contains leetcode"
+  },
+  {
+    "description": "TestCase 2: Verify Problem Set URL and Display First 5 Questions",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "GetUrl"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": "problemset"
+      }
+    ],
+    "error_out": "Get the URL of the page and verify",
+    "hint": "Ensure that you check the url of the page contains problemset"
+  },
+  {
+    "description": "TestCase 2: Verify Problem Set URL and Display First 5 Questions",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "GetElementText"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": "Two Sum"
+      }
+    ],
+    "error_out": "Did you display the first problem?",
+    "hint": "Ensure that you get the text of the problem, Two Sum"
+  },
+  {
+    "description": "TestCase 2: Verify Problem Set URL and Display First 5 Questions",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "GetElementText"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": "Add Two Numbers"
+      }
+    ],
+    "error_out": "Did you display the second problem?",
+    "hint": "Ensure that you get the text of the problem, Add Two Numbers"
+  },
+  {
+    "description": "TestCase 2: Verify Problem Set URL and Display First 5 Questions",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "GetElementText"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": "Longest Substring Without Repeating Characters"
+      }
+    ],
+    "error_out": "Did you display the third problem?",
+    "hint": "Ensure that you get the text of the problem, Longest Substring Without Repeating Characters"
+  },
+  {
+    "description": "TestCase 2: Verify Problem Set URL and Display First 5 Questions",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "GetElementText"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": "Median of Two Sorted Arrays"
+      }
+    ],
+    "error_out": "Did you display the fourth problem?",
+    "hint": "Ensure that you get the text of the problem, Median of Two Sorted Arrays"
+  },
+  {
+    "description": "TestCase 2: Verify Problem Set URL and Display First 5 Questions",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "GetElementText"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": "Longest Palindromic Substring"
+      }
+    ],
+    "error_out": "Did you display the fifth problem?",
+    "hint": "Ensure that you get the text of the problem, Longest Palindromic Substring"
+  },
+  {
+    "description": "TestCase 3: Verify the Two Sum problem",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "ClickElement"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": "ClickElement"
+      }
+    ],
+    "error_out": "Open the Two Sum problem",
+    "hint": "Click on the Two Sum problem"
+  },
+  {
+    "description": "TestCase 3: Verify the Two Sum problem",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "GetUrl"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": "two-sum"
+      }
+    ],
+    "error_out": "Get the URL of the page and verify",
+    "hint": "Ensure that you check the url of the page contains two-sum"
+  },
+  {
+    "description": "TestCase 4: Ensure the submissions tab displays \"Register or Sign In\"",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "GetElementText"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": "Register or Sign In"
+      }
+    ],
+    "error_out": "Check the submissions tab and verify if it shows \"Register or Sign In.\"",
+    "hint": "Ensure that \"Register or Sign In\" is displayed when you click on the submission tab."
   }
 ]
 }
