@@ -94,9 +94,9 @@ def assert_logs(chrome_logs, assesment_instruction_file):
     except Exception as e:
         print("assesment ERROR: invalid assesment file " + str(e))
         return
-    Logs = logProvider(chrome_logs)
 
     for instruction in assesment_instructions:
+        Logs = logProvider(chrome_logs)
         final_output[instruction['description']]="TEST_STATUS_FAILURE"
         while True:
             log_item =Logs.get_next_log_statement()

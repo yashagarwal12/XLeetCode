@@ -12,16 +12,21 @@ apply plugin: 'application'
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    // testCompile group: 'junit', name: 'junit', version: '4.12'
-    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.5.3'
-    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-alpha-1'
+
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+   
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation 'io.github.bonigarcia:webdrivermanager:5.5.3'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation 'org.seleniumhq.selenium:selenium-java:4.14.0'
+
 }
 
 //task startScript(type:Exec) {
@@ -32,4 +37,4 @@ dependencies {
 
 //test.dependsOn startScript
 
-mainClassName = 'apTests.App'
+mainClassName = 'demo.App'
